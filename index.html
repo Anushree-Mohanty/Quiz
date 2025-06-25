@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Quiz </title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- home page -->
+    <header>
+        <img src="images/Shinchan logo.png"
+            alt="SHINCHAN QUIZ">
+        <div class="hamburger">
+          <img src="images/bars-solid.svg" alt="Menu Icon">
+         </div>
+        <ul class="nav-links" >
+          <li ><a href="#home">Home</a></li>
+          <li ><a href="#about">About</a></li>
+          <li ><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- home-content -->
+    <section class="home" id="home">
+     <div class="boxed-section">
+       <div class="content">
+        <h2>WELCOME!</h2>
+        <p>ARE YOU A TRUE SHINCHAN FAN ??? TEST YOURSELF AND FIND OUT HOW MUCH DO YOU REMEMBER ABOUT SHINCHAN !</p>
+        <button id="start-btn">Start Quiz</button>
+       </div>
+     </div>
+    </section>
+
+    <!-- Instructions -->
+    <section class="instruction">
+       <div class="boxed-section">
+        <h4>Instructions</h4>
+          <ol>
+            <li>You will be given total 10 questions.</li>
+            <li>+4 points for Correct answers, -1 point for Incorrect answers and 0 points for Skipped answers.</li>
+            <li>Read the questions carefully and answer.</li>
+          </ol>
+        <p>Good luck !</p>
+        <div class="button">
+           <button class="Exit">Back to Home</button>
+           <button class="Continue">Continue</button>
+        </div>
+       </div>
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section class="quiz_section">
+        <div class="quizpart">
+         <div class="boxed-section">
+            <p class="score">SCORE : 0 / 40</p>
+            <div class="text">
+                <div class="quiz">
+                    <div class="head">
+                        <h3 class="question">question</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="anspart">
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="a">
+                            <label for="a" id="option_1">Quiz option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="b">
+                            <label for="b" id="option_2">Quiz option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="c">
+                            <label for="c" id="option_3">Quiz option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="d">
+                            <label for="d" id="option_4">Quiz option</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pic">
+                    <img class="photo" src="" alt="pic">
+                </div>
+            </div>
+            <div class="btn">
+                <button class="skip">Skip</button>
+                <button class="next">Next</button>
+                <button class="Submit">Submit</button>
+            </div>
+         </div>
+        </div>
+    </section>
+
+    <!-- result -->
+    <section class="result">
+        <div class="res">
+          <div class="boxed-section">
+            <h2>Congratulations on completing the quiz!</h2>
+            <h3>Your score : ${score} / ${total} Points</h3>
+            <p>Correct Answers : ${correct_ans}</p>
+            <p>Wrong Answers : ${wrong_ans}</p>
+            <p>Attempted Questions : ${attempted}</p>
+            <p>Unattempted Questions : ${unattempted}</p>
+            <div class="button">
+                <button class="reload-button">Exit</button>
+            </div>
+          </div> 
+        </div>
+    </section>
+    
+    <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>WELCOME to FunQuiz. It is a website made using HTML , CSS & JavaScript with lots of love ❤️ . Hoping that you have a lot of fun!! </p>
+    </section>
+
+    <footer id ="contact">
+        <p>Contact Us</p>
+        <p>Follow us on <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        <p>&copy; 2025 FunQuiz.All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
