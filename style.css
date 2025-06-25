@@ -45,8 +45,9 @@ header img {
     text-decoration: none;
     color: white;
     height: 60px;
-    margin-top: 10px;
+    margin-top: 15px;
     align-content: center;
+    gap: 20px;
 }
 
 .hamburger img {
@@ -253,7 +254,7 @@ footer a {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 50px;
+        top: 71px;
         left: 0;
         background: #333;
     }
