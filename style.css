@@ -257,6 +257,7 @@ footer a {
         top: 71px;
         left: 0;
         background: #333;
+        padding: 15px;
     }
 
     .nav-links.active {
